@@ -1,0 +1,13 @@
+
+
+Purpose: Block storage monitor in AWS EC2 running Linux.
+Author: P-C Markovski
+
+Features:
+	Automate block storage commands.		
+		iotop -b -d 3				Run iotop for IO statistics, batch mode, 3 seconds between each sample.
+		iostat -p xvda1 1 4			Display 4 reports every 1 second for xvda1 and all its partitions.
+		ioping -c 10 -s 1M /var/www		Measure disk latency, 1 MB 10 times, for /var/www.
+		du -c /var/log				Get a grand total for the /var/log disk usage.
+
+
