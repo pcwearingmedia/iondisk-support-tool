@@ -10,6 +10,31 @@ if [[ $# -eq 0 ]]; then
 	exit 0
 fi
 
+
+case $1 in
+	"iotop")
+		echo "iotop"
+		exit
+		;;
+	"iostat")
+		echo "iostat"
+		;;
+	"ioping")
+		echo "ioping"
+		;;
+	"du")
+		echo "du"
+		;;
+	"df")
+		echo "df"
+		;;
+	*)
+		echo "Please provide a correct operation."
+		exit 1
+		;;
+esac
+
+
 iotop -b -d 3
 
 iostat -p xvda1 1 4
