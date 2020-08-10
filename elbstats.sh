@@ -14,19 +14,24 @@ fi
 case $1 in
 	"iotop")
 		echo "iotop"
+		iotop -b -d 3
 		exit
 		;;
 	"iostat")
 		echo "iostat"
+		iostat -p xvda1 1 4
 		;;
 	"ioping")
 		echo "ioping"
+		ioping -c 10 -s 1M /var/www
 		;;
 	"du")
 		echo "du"
+		du -c /var/log
 		;;
 	"df")
 		echo "df"
+		df -hT /dev/xvda1
 		;;
 	*)
 		echo "Please provide a correct operation."
@@ -35,13 +40,4 @@ case $1 in
 esac
 
 
-iotop -b -d 3
-
-iostat -p xvda1 1 4
-
-ioping -c 10 -s 1M /var/www
-
-du -c /var/log
-
-df -hT /dev/xvda1
 
