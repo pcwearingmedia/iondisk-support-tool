@@ -2,6 +2,7 @@
 
 # Purpose: Block storage monitor in AWS EC2 running Linux, using Bash script.
 # Author: P-C Markovski
+# Version: 0.5
 
 if [[ $# -eq 0 ]]; then
 	echo "ELBstats 0.5 - AWS Elastic Block Storage (ELB) stats"
