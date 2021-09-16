@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Purpose: I/O monitor and disk usage/free script with different switches.
-# Purpose: Data gathering tool for 1st Line Support, per JustLingo server maintenance operations.
+# Description: Data gathering tool for 1st Line Support, per JustLingo server maintenance operations.
 # Author: P-C Markovski
 # Version: 1.0
 
