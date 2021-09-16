@@ -1,7 +1,7 @@
 
 
-Purpose: Block storage monitor in AWS EC2 running Linux, using Bash script.
-Author: P-C Markovski
+Name: IOnDisk.sh - "I/O and Disk data gathering tool."
+Data gathering tool for 1st Line Support, per JustLingo server maintenance operations.
 
 Features:
 	Automate block storage commands with Bash.
