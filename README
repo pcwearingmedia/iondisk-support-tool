@@ -12,4 +12,7 @@ Features:
 		df -hT /dev/xvda1			Show free disk space, and used disk space in GB/MB as well as %.
 	whiptail for GUI.
 
-
+	Dependencies:
+		sysstat (for iostat)
+		iotop
+		ioping
