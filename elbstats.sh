@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# Purpose: Block storage monitor in AWS EC2 running Linux, using Bash script.
+# Purpose: I/O monitor and disk usage/free script with different switches.
+# Purpose: Data gathering tool for 1st Line Support, per JustLingo server maintenance operations.
 # Author: P-C Markovski
-# Version: 0.5
+# Version: 1.0
 
 if [[ $# -eq 0 ]]; then
 	echo "ELBstats 0.5 - AWS Elastic Block Storage (ELB) stats"
