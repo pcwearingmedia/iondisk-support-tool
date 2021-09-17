@@ -13,6 +13,16 @@ if [[ $# -eq 0 ]]; then
 fi
 
 
+# Check if the dependencies have been installed.
+str=""
+dependencies=( sysstat ioping iotop )
+for i in "${dependencies[@]}"; do
+	str=$(dpkg-query -l | grep $i)
+	if [ -z "$str" ]; then
+		printf "$i is not installed. Please install the apt package in order to use IOnDisk.sh.\n\n"
+	fi
+done
+
 case $1 in
 	"iotop")
 		echo "iotop"
