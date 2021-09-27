@@ -6,7 +6,7 @@
 # Version: 1.0
 
 if [[ $# -eq 0 ]]; then
-	echo "IOnDisk - I/O monitor and disk usage/free script. Data gathering tool for 1st Line Support, per JustLingo server maintenance operations."
+	echo "IOnDisk - I/O monitor and disk usage/free script (/var/log and /dev/xvda1 hardcoded, respectively). Data gathering tool for 1st Line Support, per JustLingo server maintenance operations."
         echo "Author: P-C Markovski"
 	echo "Usage: iondisk.sh io[top/stat/ping] d[u/f]"
 	exit 0
