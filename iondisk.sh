@@ -23,8 +23,7 @@ for i in "${dependencies[@]}"; do
 		read yn
 		if [[ $yn -eq "yes" ]]; then
 			apt-get install $i
-			printf "$i has been installed. Please run the script again with an operation to execute.\n"
-			exit
+			printf "$i has been installed.\n"
 		fi
 	fi
 done
