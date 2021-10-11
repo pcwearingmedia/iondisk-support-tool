@@ -16,3 +16,4 @@ Features:
 		sysstat (for iostat)
 		iotop
 		ioping
+	These are installed by the tool if missing (and approved by the user to install).
