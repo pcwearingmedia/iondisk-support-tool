@@ -19,7 +19,13 @@ dependencies=( sysstat ioping iotop )
 for i in "${dependencies[@]}"; do
 	str=$(dpkg-query -l | grep $i)
 	if [ -z "$str" ]; then
-		printf "$i is not installed. Please install the apt package in order to use IOnDisk.sh.\n\n"
+		printf "$i is not installed. Would you like us to install it? (yes/no) "
+		read yn
+		if [[ $yn -eq "yes" ]]; then
+			apt-get install $i
+			printf "$i has been installed. Please run the script again with an operation to execute.\n"
+			exit
+		fi
 	fi
 done
 
