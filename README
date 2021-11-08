@@ -2,6 +2,8 @@
 
 Name: IOnDisk.sh - "I/O and Disk data gathering tool."
 Data gathering tool for 1st Line Support, per JustLingo server maintenance operations.
+Author: P-C Markovski
+Version: 1.0
 
 Features:
 	Automate block storage commands with Bash.
