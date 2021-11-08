@@ -12,7 +12,6 @@ Features:
 		ioping -c 10 -s 1M /var/www		Measure disk latency, 1 MB 10 times, for /var/www.
 		du -c /var/log				Get a grand total for the /var/log disk usage.
 		df -hT /dev/xvda1			Show free disk space, and used disk space in GB/MB as well as %.
-	whiptail for GUI.
 
 	Dependencies:
 		sysstat (for iostat)
