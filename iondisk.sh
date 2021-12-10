@@ -24,6 +24,8 @@ for i in "${dependencies[@]}"; do
 		if [[ $yn -eq "yes" ]]; then
 			apt-get install $i
 			printf "$i has been installed.\n"
+		else
+			print "You chose not to install $i. Continuing..\n"
 		fi
 	fi
 done
