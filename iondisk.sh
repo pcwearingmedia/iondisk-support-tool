@@ -50,7 +50,7 @@ case $1 in
 		;;
 	"df")
 		echo "df"
-		df -hT /dev/xvda1
+		df -hT $2
 		;;
 	*)
 		echo "Please provide a correct operation."
