@@ -50,7 +50,14 @@ case $1 in
 		;;
 	"df")
 		echo "df"
-		df -hT $2
+		if [[ -z $2 ]]; then
+			printf "Available disk partitions..\n"
+			cat /etc/mtab | grep -E "nvme|sd|hd" | awk {'print $1;'}
+			read -p "Device? " dice
+			df -hT $dice
+		else
+			df -hT $2
+		fi
 		;;
 	*)
 		echo "Please provide a correct operation."
